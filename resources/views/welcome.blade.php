@@ -11,12 +11,28 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="navbar navbar-light mb-1">
-            <a class="navbar-brand" href="{{url('/')}}">Clientes</a>
-        </nav>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #7203CE">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">
+        <img src="https://cdn-icons-png.flaticon.com/512/675/675523.png" alt="logo" style="width:40px;">
+    </a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Clientes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Inventario</a>
+        </li>
+    </ul>
+    </nav>
 
         <div class="container ">
-        @yield('content') <!-- es para que se herede en todas las plantillas-->
+        @yield('content')
         </div>
     </body>
 </html>

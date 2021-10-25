@@ -13,7 +13,7 @@
                 <table class="table table-bordered table-hover text-center">
 
                     <!-- Encabezado de Tabla" -->
-                    <thead class="thead-dark">
+                    <thead style="background-color: #95EEE3">
                         <tr>
                             <th>Nombre</th>
                             <th>Compañia</th>
