@@ -13,7 +13,14 @@ class CrateClientsTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('clients', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('nombre');
+            $table->string('compañia');
+            $table->string('telefono');
+            $table->string('email');
+            $table->timestamps();
+        });
     }
 
     /**
